@@ -1,0 +1,512 @@
+/*눈누 이사만루_공고딕체 웹폰트*/
+@font-face {
+    font-family: 'GongGothicBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*눈누 G마켓_산스 웹폰트*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*전체 스타일 지정*/
+* {margin: 0; padding: 0;}
+html, body {
+	background-color: #021534;
+	font-family: 'GmarketSansMedium';
+	color: #ffffff;
+}
+li {
+	list-style: none;
+}
+a { 
+	display: block;
+	text-decoration-line: none;
+	color: #fff;
+}
+img {
+	width: 100%;
+}
+.more_btn {
+	width: 30vw;
+	height: 8vw;
+	box-sizing: border-box;
+	line-height: 8vw;
+	text-align: center;
+	margin: 5vw auto;
+	font-size: 3vw;
+}
+
+/*********** Header Style ***********/
+.header_wrap {
+	width: 100%;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 50;
+}
+.header_wrap>ul {
+	width: 96vw;
+	height: 60px;
+	background-color: #102957;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 2vw;
+}
+.header_wrap>ul .menu_open {
+	padding: 3vw;
+	width: 8vw;
+}
+.header_wrap>ul .logo {
+	width: 20vw;
+	padding: 2vw 0;
+}
+.header_wrap>ul .call {
+	padding: 3vw;
+	width: 8vw;
+}
+/**Nav Style**/
+nav {
+	width: 100%;
+	position: absolute;
+	left: -100vw; /*****nav 숨김*****/
+}
+nav .nav_wrap {
+	background-color: rgba(2,21,52,0.8);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+}
+nav .nav_wrap>ul {
+	width: 80vw;
+	height: 100vh;
+	float: left;
+	padding-top: 14vw;
+	background-color: #021534;
+}
+nav .nav_wrap>ul>li {
+	width: 37vw;
+	box-sizing: border-box;
+	margin-left: 3vw;
+}
+nav .nav_wrap>ul>li.active {
+	background-color: #102957;
+}
+nav .nav_wrap>ul>li>a {
+	color: #5464ff;
+	font-size: 3.5vw;
+	font-weight: bold;
+	padding: 3vw 2vw;
+}
+nav .nav_wrap .sub {
+	position: absolute;
+	left: 40vw;
+	top: 14vw;
+	width: 40vw;
+	z-index: 90;
+	background-color: #102957;
+}
+nav .nav_wrap .sub>li {
+	box-sizing: border-box;
+}
+nav .nav_wrap .sub>li>a {
+	font-size: 3vw;
+	padding: 3vw;
+}
+.sub_bg {
+	position: absolute;
+	top: 0px; left: 40vw;
+	background-color: #102957;
+	z-index: 80;
+	width: 40vw;
+	height: 100vh;
+}
+nav .nav_wrap .menu_close {
+	width: 8vw;
+	float: left;
+	margin: 5vw 3vw;
+}
+/*********** Main Slider Style ***********/
+section.slide {
+	width: 100%;
+	float: left;
+}
+/************** About Style **************/
+section.about {
+	width: 100%;
+	float: left;
+	text-align: center;
+	margin: 15vw auto;
+}
+.about h1 {
+	font-size: 4vw;
+	font-weight: bold;
+}
+.about .gong {
+	font-family: 'GongGothicBold';
+	font-size: 5vw;
+	color: #9048ff;
+	padding: 1vw 0;
+}
+.about p {
+	font-size: 3vw;
+}
+.about .more_btn {
+	border: 2px solid #9048ff;
+	margin-top: 10vw;
+	margin-bottom: 0;
+}
+/************* Music Style *************/
+section.music {
+	width: 100%;
+	float: left;
+	background-color: #102957;
+}
+.music .title {
+	width: 100%;
+}
+.music .title ul {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.music .title ul li {
+	width: 33vw;
+	height: 13vw;
+	text-align: center;
+	line-height: 14vw;
+	box-sizing: border-box;
+	background-color: #fa40dc;
+	border: 1px solid #102957;
+	border-right: none;
+}
+.music .title ul li a {
+	color: #102957;
+	font-weight: bold;
+}
+.music .title ul li:last-child {
+	border-right: 1px solid #102957;
+}
+.music .title ul li.active {
+	background-color: #102957;
+}
+.music .title ul li.active a {
+	color: #ffffff;
+	font-weight: bold;
+}
+.music .content {
+	width: 100%;
+	height: 105vw;
+	padding: 5vw 0;
+	box-sizing: border-box;
+	position: relative;
+}
+/*탭 내용 겹침*/
+.music .content > div {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.music .content div > ul {
+	width: 90vw;
+	height: 95vw;
+	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.music .content div > ul > li {
+	width: 43vw;
+	margin: 2vw 0;
+}
+.music .content div > ul > li > a {
+	position: relative;
+}
+.music .content div > ul > li > a > div {
+	position: absolute;
+}
+.music .content div > ul > li .m_img {
+	width: 43vw;
+	height: 43vw;
+	overflow: hidden;
+}
+.music .content div > ul > li .m_img img {
+	transform: scale(1,1);
+	transition: all 0.5s;
+}
+.music .content div > ul > li .m_des {
+	width: 43vw;
+	height: 43vw;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 13vw 0;
+}
+.music .content div > ul > li .m_des h1 {
+	position: relative;
+	padding: 2vw 0;
+	font-size: 4vw;
+}
+.music .content div > ul > li .m_des h1:after {
+	content: "";
+	width: 3vw;
+	height: 2px;
+	background-color: #ffffff;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -1.5vw;
+}
+.music .content div > ul > li .m_des p {
+	padding: 2vw 0;
+	font-size: 2.5vw;
+}
+/****** music hover style *******/
+.music .content div > ul > li .m_hover {
+	width: 43vw;
+	height: 43vw;
+	text-align: center;
+	padding: 9vw 0;
+	box-sizing: border-box;
+	background-color: rgba(2,21,52,0.8);
+	display: none;
+}
+.music .content div > ul > li:hover .m_img img {
+	transform: scale(1.1, 1.1);
+}
+.music .content div > ul > li:hover .m_des {
+	display: none;
+}
+.music .content div > ul > li:hover .m_hover {
+	display: block;
+}
+.music .content div > ul > li .m_hover h3 {
+	font-size: 3vw;
+	font-family: 'GongGothicBold';
+	color: #fa40dc;
+	position: relative;
+	display: inline-block;
+}
+.music .content div > ul > li .m_hover h3:after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #fa40dc;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.music .content div > ul > li .m_hover h1 {
+	padding: 3vw 0;
+	font-size: 3.5vw;
+	height: 12vw;
+}
+.music .content div > ul > li .m_hover p {
+	font-size: 2.5vw;
+}
+.music .more_btn {
+	border: 2px solid #fa40dc;
+	margin-top: 1vw;
+	margin-bottom: 13vw;
+}
+
+/******** company style *********/
+section.company {
+	width: 100%;
+	float: left;
+}
+.company ul {
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	margin-bottom: 10vw;
+}
+.company ul li {
+	width: 49vw;
+	border: 2px #5464ff solid;
+	border-right: 0;
+	box-sizing: border-box;
+	padding: 2vw;
+	text-align: center;
+}
+.company ul li .c_img {
+	width: 20vw;
+	height: 13vw;
+	margin: 2vw auto;
+}
+.company ul li h2 {
+	font-size: 3.5vw;
+	padding-bottom: 1vw;
+}
+.company ul li p {
+	font-size: 2.3vw;
+	padding-bottom: 2vw;
+}
+.company ul li:first-child .c_img img {
+	filter: brightness(10);	
+	padding: 2vw 0;
+}
+.company ul li:last-child {
+	border-right: 2px #5464ff solid;
+}
+
+/********* newsletter style **********/
+section.newsletter {
+	width: 100%;
+	float: left;
+	margin: 5vw 0;
+}
+.newsletter h1 {
+	text-align: center;
+	margin: 5vw auto;
+	font-family: 'GongGothicBold';
+	color: #9048ff;
+	font-size: 5.5vw;
+}
+.newsletter .news_wrap {
+	width: 92vw;
+	margin: 0 auto;
+}
+.newsletter .news_wrap ul {
+	
+}
+.newsletter .news_wrap ul li {
+	width: 100%;
+	height: 20vw;
+	border: 2px #9048ff solid;
+	margin: 2vw 0;
+	padding: 2vw;
+	text-align: center;
+	box-sizing: border-box;
+}
+.newsletter .news_wrap ul li a h2 {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 3vw;
+	font-weight: bold;
+}
+.newsletter .news_wrap ul li a span {
+	font-size: 1.5vw;
+}
+.newsletter .news_wrap ul li a p {
+	font-size: 2vw;
+}
+.newsletter .more_btn {
+	border: 2px #9048ff solid;
+}
+
+/********* Partner story style **********/
+section.partner {
+	width: 100%;
+	float: left;
+	margin: 5vw 0;
+	margin-bottom: 8vw;
+}
+.partner h1 {
+	text-align: center;
+	margin: 5vw auto;
+	font-family: 'GongGothicBold';
+	color: #fa40dc;
+	font-size: 5.5vw;
+}
+.partner .partner_wrap {
+	width: 92vw;
+	margin: 0 auto;
+}
+.partner .partner_wrap ul {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.partner .partner_wrap ul li {
+	width: 44vw;
+	height: 44vw;
+	border: 2px #fa40dc solid;
+	margin: 1vw 0;
+	box-sizing: border-box;
+}
+.partner .partner_wrap ul li a {
+	position: relative;
+}
+.partner .partner_wrap ul li a>div {
+	position: absolute;
+}
+.partner .partner_wrap ul li .p_img {
+	width: 35vw;
+	margin: 3.5vw 4vw;;
+	filter: brightness(10);
+}
+.partner .partner_wrap ul li .p_hover {
+	width: 43vw;
+	height: 43vw;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 16vw 0;
+	background-color: rgba(2,21,52,0.8);
+	display: none;
+}
+.partner .partner_wrap ul li .p_hover h3 {
+	font-size: 3vw;
+	font-family: 'GongGothicBold';
+	color: #fa40dc;
+	display: inline-block;
+	position: relative;
+}
+.partner .partner_wrap ul li .p_hover h3:after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #fa40dc;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.partner .partner_wrap ul li .p_hover p {
+	font-size: 3vw;
+	padding: 3vw 0;
+}
+.partner .partner_wrap ul li:hover .p_hover {
+	display: block;
+}
+.partner .more_btn {
+	border: 2px #fa40dc solid;
+}
+
+/********* Footer style **********/
+footer {
+	width: 100%;
+	float: left;
+	background-color: #102957;
+}
+.footer_wrap {
+	width: 90vw;
+	margin: 10vw auto;
+}
+.footer_wrap .f_logo {
+	width: 30vw;
+	margin: 0 auto;
+	filter: brightness(3);
+	margin-bottom: 5vw;
+}
+.footer_wrap address {
+	font-size: 3vw;
+	font-style: normal;
+}
+.footer_wrap .copy {
+	font-size: 3vw;
+	color: #5464ff;
+	margin: 3vw 0;
+}
+.footer_wrap .top_btn {
+	width: 9vw;
+	position: fixed;
+	z-index: 3000;
+	right: 6vw;
+	bottom: 6vw;
+}
